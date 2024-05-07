@@ -211,7 +211,7 @@
                     </li>
                 <?php endif;
                 if (hasPermission('rss_feeds')): ?>
-                    <li class="treeview<?= isAdminNavActive(['import-feed', 'update-feed', 'feeds']); ?>">
+                    <li class="treeview<?= isAdminNavActive(['import-feed', 'update-feed', 'feeds', 'articles', 'bundles', 'collections']); ?>">
                         <a href="#">
                             <i class="fa fa-rss"></i> <span><?= trans("rss_feeds"); ?></span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
                         </a>

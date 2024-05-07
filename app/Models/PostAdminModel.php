@@ -381,11 +381,28 @@ class PostAdminModel extends BaseModel
         }
 
         if (!empty($data['black'])) {
-            $blackAry = split($data['black'], ",");
-
-            $this->builder->where('posts.title', null);
+            $blackAry = explode("," , $data['black']);
+            foreach ($blackAry as $index => $value) {
+                if(strlen($value)>2){
+                    $this->builder->notLike('posts.title', $value);
+                    $this->builder->notLike('posts.summary', $value);
+                }
+                # code...
+            }
         }
 
+        
+        if (!empty($data['white'])) {
+            $blackAry = explode("," , $data['white']);
+            foreach ($blackAry as $index => $value) {
+                if(strlen($value)>2){
+                    $this->builder->like('posts.title', $value);
+                    $this->builder->like('posts.summary', $value);
+                }
+                # code...
+            }
+
+        }
 
 
         if (!empty($data['post_type'])) {

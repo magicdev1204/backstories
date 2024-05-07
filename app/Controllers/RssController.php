@@ -71,7 +71,7 @@ class RssController extends BaseAdminController
 
     public function bundles()
     {
-        $data['title'] = trans("feed_articles");
+        $data['title'] = trans("bundles");
         $data['feeds'] = $this->rssModel->getFeeds();
         $data['langSearchColumn'] = 3;
         $data['adminSettings'] = getAdminSettings();
@@ -82,7 +82,7 @@ class RssController extends BaseAdminController
 
     public function collections()
     {
-        $data['title'] = trans("feed_articles");
+        $data['title'] = trans("collections");
         $data['feeds'] = $this->rssModel->getFeeds();
         $data['langSearchColumn'] = 3;
         $data['adminSettings'] = getAdminSettings();
