@@ -1012,15 +1012,15 @@ class PostController extends BaseAdminController
     public function drafts1() 
     {
         $this->checkRolePermission();
-        $data['title'] = trans('articles');
+        $data['title'] = trans('feed_articles');
         $data['authors'] = $this->authModel->getAuthors();
-        $data['formAction'] = adminUrl("drafts");
+        $data['formAction'] = adminUrl("articles");
         $numRows = $this->postAdminModel->getDraftsPaginatedCount();
         $pager = paginate($this->getPostsPerPage(), $numRows);
         $data['posts'] = $this->postAdminModel->getDraftsPaginated($this->getPostsPerPage(), $pager->offset);
         $data['adminSettings'] = getAdminSettings();
         echo view('admin/includes/_header', $data);
-        echo view('admin/post/drafts', $data);
+        echo view('admin/rss/articles', $data);
         echo view('admin/includes/_footer');
     }
 
