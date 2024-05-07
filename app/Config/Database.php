@@ -37,7 +37,7 @@ class Database extends Config
 		// 'password' => 'W#dhtz6hSx(Z',
 		'username' => 'root',
 		'password' => '',
-		'database' => 'sdf',
+		'database' => 'ki11561381_backstorieslive',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
