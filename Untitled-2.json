@@ -1,0 +1,24 @@
+fetch("https://rss.app/gql", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "authorization": "",
+    "browser-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "content-type": "application/json",
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "x-connection": "",
+    "x-csrf-token": "NbhekFGJHhyX9nDCyJdmC9z0bJ5dZU4w"
+  },
+  "referrer": "https://rss.app/signin",
+  "referrerPolicy": "same-origin",
+  "body": "{\"operationName\":\"loginWithEmail\",\"variables\":{\"email\":\"gmai@g.com\",\"password\":\"crazy@0224\"},\"query\":\"mutation loginWithEmail($email: String!, $password: String!, $updateEmailToken: String) {\\n  loginWithEmail(\\n    email: $email\\n    password: $password\\n    updateEmailToken: $updateEmailToken\\n  )\\n}\"}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});

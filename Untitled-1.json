@@ -1,0 +1,23 @@
+fetch("https://rss.app/gql", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "authorization": "",
+    "browser-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "content-type": "application/json",
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "x-connection": "",
+    "x-csrf-token": "WoJZSoG1lgFYpyfUHi4qPgkBsi8kFXZq",
+    "cookie": "_ga=GA1.1.1115480250.1714657585; intercom-id-doldv05b=94ec5b0c-7285-41a5-9465-aeb59b4021df; intercom-device-id-doldv05b=70448d19-6490-402c-8475-42fbddb3659a; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJRUGRmZWcxQVhXMWpNTTc2IiwiZW1haWwiOiJrYWx2aW50aG9tc29uNDk5QGdtYWlsLmNvbSIsImlhdCI6MTcxNDczMjk5MCwiZXhwIjoxNzE3MzI0OTkwfQ.igWaL4WA2nwCk-1EdUaJpnHFzhe5VhLN1Yj9x4aEG8M; session=InxNRvx3; cf_clearance=2cfUkt0_4bzq3Hmbv5FJ7hUTQtyBEiGfhRdt3ARJQFs-1714835455-1.0.1.1-oSr9aF2a.A4LtNDDbgBEsIEHDibj8uMfu3ipp2CjIh50.Cw_vr6gMPZ3vG9E9e4g_KEwShvR.XGalXf6s.tcAA; redirectUrl=%2Fnew-rss-feed; x-csrf-token=WoJZSoG1lgFYpyfUHi4qPgkBsi8kFXZq; _ga_NZSRTQ59X5=GS1.1.1714835456.15.1.1714836153.0.0.0; intercom-session-doldv05b=ZFVzVExGMEFobXh0SUVTd09Ja0VtZi9DQ0xadTJ5NHNxN1dKR1NDb2M5ZUFuTnhnM1RLdENXdStQWHdxbGNiUy0tb3BSeFpNdkloT0N4WnU4cFVDMnVhQT09--232e06024f9483af50228c3b85cfa20c0d25adec",
+    "Referer": "https://rss.app/new-rss-feed",
+    "Referrer-Policy": "same-origin"
+  },
+  "body": "{\"operationName\":\"createFeed\",\"variables\":{\"url\":\"https://discord.com\",\"simulate\":false,\"interfaceType\":\"GENERATOR\",\"isPreview\":false},\"query\":\"mutation createFeed($url: String, $simulate: Boolean, $interfaceType: FeedInterfaceType, $isPreview: Boolean, $scrapingRules: ScrapingRulesInput, $requestObject: RequestObjectInput) {\\n  createFeed(\\n    url: $url\\n    simulate: $simulate\\n    scrapingRules: $scrapingRules\\n    requestObject: $requestObject\\n    isPreview: $isPreview\\n    interfaceType: $interfaceType\\n  ) {\\n    feed {\\n      title\\n      description\\n      feedUrl\\n      siteUrl\\n      siteName\\n      imageUrl\\n      generator\\n      items {\\n        title\\n        url\\n        description\\n        date\\n        enclosure {\\n          url\\n          __typename\\n        }\\n        __typename\\n      }\\n      __typename\\n    }\\n    originalFeed {\\n      title\\n      description\\n      feedUrl\\n      siteUrl\\n      siteName\\n      imageUrl\\n      generator\\n      items {\\n        title\\n        url\\n        description\\n        date\\n        enclosure {\\n          url\\n          __typename\\n        }\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n}\"}",
+  "method": "POST"
+});
